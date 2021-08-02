@@ -1,0 +1,124 @@
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 22px;
+  color: seashell;
+  background-color: black;
+  opacity: 0.9;
+  text-align: center;
+  margin: 0;
+}
+/* in poza sunt specificate aceste marimi */
+
+
+
+.header{
+width: 100%;
+height: 69px;
+display: block;
+background-color: black;
+position: fixed;
+top: 0px; /* ca img sa nu se duca pedesubt la nav bar */
+border-bottom: 1px solid seashell ;
+}
+
+.logo{
+height: 50px;
+float: left;
+padding-left: 10px;
+}
+
+.navigation{
+float: right;
+height: 100%;
+margin: 0 auto;
+}
+
+.navigation a{
+height: 100%;
+display: table;
+float: left;
+padding: 0px 20px;
+
+}
+.navigation a li{
+display: table-cell;
+vertical-align: middle;
+height: 100%;
+text-decoration: underline;
+color: white;
+}
+
+
+ /* contentul */
+.mission-container{
+background-image: url(./img/img-mission-background.jpg);
+background-repeat: no-repeat;
+background-position: center;
+height: 700px;
+max-width: 1200px;
+margin: 40px auto 40px auto;
+display: flex;
+}
+
+.text-over{
+ margin: auto;   /* ca sa se centreze pe centru */
+  background-color: black;
+  width: 100%;
+}
+
+.trend-container{ 
+  display: inline-flex; /* toate flex bourile sa fie in linie */
+  max-width: 1000px;
+  height: auto;
+ flex-wrap: wrap; /*daca img nu au deajuns spatiu sa se duca de rand nou */
+ align-items: center;
+ justify-content: center;
+}
+
+.trend img{
+  height: 200px;
+  width: 300px;
+  padding: 10px 10px;  /*spatiu intre poze  */
+}
+
+/* setam banerul */
+.banner{
+height: 500px;
+max-width: 1200px;
+margin: 40px auto auto auto;
+padding-top: 85px;
+background-image: url(./img/img-locations-background.jpg);
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+}
+
+
+/* setam box in care e textul cu adresele */
+.text-top {
+  font-size: 43px;
+  font-weight: bold;
+}
+
+.box-container {
+  max-width: 1050px;
+  margin: 15px auto auto auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.box {
+  height: 300px;
+  padding: 20px;
+  margin-bottom: auto;
+  flex-basis: 30%;     /*width: */
+  box-sizing: border-box;
+  background-color: black;
+  opacity: 0.8;
+}
+
+footer{
+  display: block;
+  float: left;
+  padding-left: 20px;
+}
